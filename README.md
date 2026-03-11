@@ -51,11 +51,10 @@
 
 ```text
 QuizClash/
-├─ 📄 index.html          # Main HTML page with quiz, leaderboard, forum
+├─ 📄 quiz.html          # Main HTML page with quiz, leaderboard, forum
 ├─ 🎨 quiz.css            # Styles for all sections, cards, quiz, popups
 ├─ ⚡ quiz.js             # Game logic, timer, AI opponent, forum, leaderboard
 └─ 🖼 background_image.jpg # Background used for sections
 ```
 
-Challenge the Dev, post in the forum, and enjoy QuizClash! 🎮🧩
-Created by Sanika Kangane
+## Created by *Sanika Kangane 👩🏻‍💻*
