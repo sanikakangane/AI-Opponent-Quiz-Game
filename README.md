@@ -104,9 +104,10 @@ QuizClash/
 ├─ quiz.css            # Styles for all sections, cards, quiz, popups
 ├─ quiz.js             # Game logic, timer, AI opponent, forum, leaderboard
 └─ background_image.jpg # Background used for sections
+```
 
 ## ✨ Author
 
-**Sanika Kangane** 💖  
+**Sanika Kangane** 😎  
 
 Challenge the Dev, post in the forum, and enjoy QuizClash! 🎮🧩
