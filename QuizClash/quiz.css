@@ -1,0 +1,472 @@
+/* ================= GENERAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main {
+    min-height: 100vh;
+}
+
+/* ================= HEADER ================= */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 50px;
+    color: #ddf00e;
+    font-weight: 700;
+    text-decoration: none;
+    filter: drop-shadow(0 0 5px #09001d);
+}
+
+.navbar {
+    display: flex;
+    gap: 60px;
+}
+
+.navbar a {
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #ff2fb3;
+}
+
+/* ================= HOME ================= */
+#homesection {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url("background_image.jpg") no-repeat center/cover;
+}
+
+.home-content {
+    max-width: 900px;
+}
+
+.home-content h1 {
+    font-size: 100px;
+    font-weight: 770;
+    font-family: 'Orbitron', monospace;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    line-height: 1.2;
+}
+
+.home-content p {
+    font-size: 19px;
+    margin: 15px 0 35px;
+    letter-spacing: 3px;
+    color: gold;
+}
+
+.start-btn {
+    padding: 15px 40px;
+    background: #ff2fb3;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 15px #ff2fb3;
+    transition: 0.4s;
+}
+
+.start-btn:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+/* ================= MODE CARDS ================= */
+.modes {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 120px;
+}
+
+.mode-card {
+    width: 300px;
+    padding: 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+}
+
+.mode-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+}
+
+.mode-card h2 {
+    margin-bottom: 10px;
+    font-size: x-large;
+}
+
+.mode-card p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.mode-card button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.free { background: #22c55e; }
+.pro { background: #ff3c8c; }
+.elite { background: #ff6b3d; }
+
+.mode-card.selected {
+    border: 3px solid #00ff88;
+    box-shadow: 0 0 20px #00ff88;
+    background: rgba(0, 255, 150, 0.1);
+}
+
+/* ================= LOCK BOX ================= */
+#lockBox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 32px 25px;
+    border-radius: 10px;
+    font-size: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+
+/* ================= QUIZ ================= */
+#quizsection {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("background_image.jpg") no-repeat center/cover;
+}
+
+#quiz {
+    width: 800px;
+    background: transparent;
+    border-radius: 10px;
+    border: 5px solid #c8cfdd;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+#question {
+    font-size: 32px;
+    font-weight: 700;
+    padding: 40px;
+    border-bottom: 1px solid #ddd;
+    color: #f5eeee;
+}
+
+#quiz ul {
+    list-style: none;
+    padding: 30px 40px;
+}
+
+#quiz li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 20px;
+    margin-bottom: 18px;
+    border-radius: 30px;
+    border: 2px solid #ddd;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#quiz li:hover {
+    background: #e49c0b;
+    border-color: #f6efef;
+}
+
+#quiz input[type="radio"] {
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+#quiz label, #quiz span {
+    font-size: 30px;
+    color: #f6eeee;
+    cursor: pointer;
+}
+
+#submit {
+    margin: 20px 40px 40px;
+    padding: 14px 30px;
+    font-size: 30px;
+    border: none;
+    border-radius: 30px;
+    background: #bbe2f1;
+    color: #080707;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#submit:hover { background: #04c3ee; }
+
+/* ================= TIMER ================= */
+#timer {
+    font-size: 28px;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* ================= POPUPS ================= */
+#popupMessage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    padding: 20px 40px;
+    border-radius: 12px;
+    display: none;
+    z-index: 999;
+}
+
+.popup-win { box-shadow: 0 0 25px #00ff88; color: #00ff88; }
+.popup-lose { box-shadow: 0 0 25px #ff2f2f; color: #ff2f2f; }
+
+/* ================= RESULT POPUP ================= */
+#resultPopup {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.result-box {
+    background: white;
+    width: 420px;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    color: #333;
+}
+
+.result-box h2 { margin-bottom: 15px; font-size: 32px; }
+.result-box p { font-size: 20px; margin: 6px 0; }
+.result-box span { font-weight: bold; }
+.result-box hr { margin: 15px 0; border: none; border-top: 1px solid #ddd; }
+.result-buttons { display: flex; justify-content: space-between; margin-top: 18px; }
+#goHome, #viewLeaderboard { padding: 8px 18px; border: none; border-radius: 6px; cursor: pointer; }
+#goHome { background: #5b86e5; color: white; } 
+#viewLeaderboard { background: #9b27af; color: white; }
+#goHome:hover { background: #3f6ed6; } 
+#viewLeaderboard:hover { background: #7a1d8a; }
+
+/* ================= LEADERBOARD ================= */
+#leaderboard {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: url("background_image.jpg") no-repeat center/cover;
+    padding-top: 100px;
+    text-align: center;
+}
+
+#leaderboard h1 {
+    font-size: 60px;
+    color: #ffdd00;
+    text-shadow: 0 0 20px #ffdd00, 0 0 40px #ffb700;
+    margin-bottom: 40px;
+}
+
+#leaderboardList {
+    list-style: none;
+    width: 60%;
+    max-width: 600px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#leaderboardList li {
+    background: transparent;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(118, 233, 233, 0.5);
+    border: 2px solid rgba(255,255,255,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#leaderboardList li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ff2fb3, 0 0 15px #00ff88;
+}
+
+#leaderboardList li.rank-1 {
+    background: linear-gradient(90deg, #ffd700, #ffea00);
+    color: #000;
+    border: 2px solid #ffd700;
+    box-shadow: 0 0 25px #ffd700;
+    font-weight: bold;
+}
+
+#leaderboardList li.rank-2 {
+    background: linear-gradient(90deg, #c0c0c0, #d3d3d3);
+    color: #000;
+    border: 2px solid #c0c0c0;
+    box-shadow: 0 0 20px #c0c0c0;
+}
+
+#leaderboardList li.rank-3 {
+    background: linear-gradient(90deg, #cd7f32, #d99156);
+    color: #fff;
+    border: 2px solid #cd7f32;
+    box-shadow: 0 0 20px #cd7f32;
+}
+
+/* ================= FORUM ================= */
+#forum {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: url("background_image.jpg") no-repeat center/cover;
+    padding-top: 100px;
+    text-align: center;
+}
+
+#forum h1 {
+    font-size: 80px;
+    color: #00ff88;
+    text-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
+    margin-bottom: 30px;
+}
+
+#forum p {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.forum-container {
+    width: 75%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.post-input {
+    display: flex;
+    gap: 15px;
+}
+
+.post-input input {
+    flex: 1;
+    padding: 25px 30px;
+    font-size: 22px;
+    border-radius: 50px;
+    border: none;
+    background: rgba(0, 6, 9, 0.7);
+    color: #fff;
+}
+
+.post-input button {
+    padding: 20px 35px;
+    background: #ff2fb3;
+    color: white;
+    font-size: 22px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.post-input button:hover {
+    background: #ff6bd1;
+}
+
+#forumPosts {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+#forumPosts li {
+    color: #fff;
+    padding: 25px 30px;
+    border-radius: 25px;
+    font-size: 22px;
+    text-align: left;
+    word-wrap: break-word;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(0,255,255,0.4);
+}
+
+#forumPosts li:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px rgba(0,255,255,0.6);
+}
+
+#forumPosts li.ai-post {
+    background: rgba(255, 47, 179, 0.7);
+    align-self: flex-start;
+}
+
+#forumPosts li.user-post {
+    background: rgba(0, 255, 136, 0.7);
+    align-self: flex-end;
+}
