@@ -58,5 +58,4 @@ QuizClash/
 ```
 
 Challenge the Dev, post in the forum, and enjoy QuizClash! 🎮🧩
-
-## Created by **Sanika Kangane** 👩🏻‍💻
+Created by Sanika Kangane
