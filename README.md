@@ -57,5 +57,6 @@ QuizClash/
 └─ 🖼 background_image.jpg # Background used for sections
 ```
 
-## Challenge the Dev, post in the forum, and enjoy QuizClash! 🎮🧩
+Challenge the Dev, post in the forum, and enjoy QuizClash! 🎮🧩
+
 ## Created by **Sanika Kangane** 👩🏻‍💻
